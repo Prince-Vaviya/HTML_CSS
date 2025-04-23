@@ -1,0 +1,31 @@
+div{
+    background-color: yellow;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.div1{
+    font-size: 20px;
+    color: red;
+    font-family: Arial;
+}
+
+.div2{
+    color:grey;
+}
+
+.div3{
+    color:grey;
+}
+
+.div3 p{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.div4 p{
+    border: 1px solid black;
+    padding: 10px;
+}
