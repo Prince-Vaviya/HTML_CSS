@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            border: 5px solid ;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+            border-style: groove;
+            padding: 10px;
+            font-family: system-ui;
+            animation-name: border_anim;
+            animation-iteration-count: infinite;
+            animation-duration: 1.3s;
+        }
+
+        @keyframes border_anim {
+            0%{
+                border-style: inset;
+                border-color: red;
+            }
+            20%{
+                border-style: outset;
+                border-color: yellowgreen;
+            }
+            50%{
+                border-style: inset;
+                border-color: cyan;
+            }
+            75%{
+                border-style: outset;
+                border-color: plum;
+            }
+            100%{
+                border-style: inset;
+                border-color: darkcyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>CONTENT</h1>
+    </div>
+</body>
+</html>
