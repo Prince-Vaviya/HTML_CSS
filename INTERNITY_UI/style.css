@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.navbar{
+    display: flex;
+    margin: 10px;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.about{
+    text-align: center;
+    margin-left: 90vh;
+}
+.internships{
+    margin-left: 10px;
+    text-align: center;
+}
+.domains{
+    margin-left: 10px;
+    text-align: center;
+}
+.blog{
+    margin-left: 10px;
+    text-align: center;
+}
+.contact{
+    margin-left: 10px;
+    text-align: center;
+}
+.login{
+    margin-left: 10px;
+}
+
+.register{
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+
+.dashboard{
+    background-color: rgb(202, 67, 202);
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.form{
+    text-align: center;
+}
+
+div{
+    margin-top: 10px;
+}
