@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden - Fine Indian Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                Spice Garden
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact" class="btn-reserve">Reserve Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to Spice Garden</h1>
+            <p class="tagline">Experience the Authentic Taste of India</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">View Menu</a>
+                <a href="#contact" class="btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <input type="radio" name="category" id="starters-radio" class="category-radio" checked>
+                <input type="radio" name="category" id="main-radio" class="category-radio">
+                <input type="radio" name="category" id="desserts-radio" class="category-radio">
+                
+                <div class="category-labels">
+                    <label for="starters-radio" class="category-btn">Starters</label>
+                    <label for="main-radio" class="category-btn">Main Course</label>
+                    <label for="desserts-radio" class="category-btn">Desserts</label>
+                </div>
+            </div>
+            
+            <div class="menu-category" id="starters">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Paneer Tikka</h4>
+                            <span class="price">₹299</span>
+                        </div>
+                        <p>Grilled cottage cheese with Indian spices and mint chutney</p>
+                        <span class="badge">Chef's Special</span>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Chicken 65</h4>
+                            <span class="price">₹349</span>
+                        </div>
+                        <p>Spicy deep-fried chicken with curry leaves and red chilies</p>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Hot</span>
+                            <span class="non-veg-badge"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Veg Spring Roll</h4>
+                            <span class="price">₹249</span>
+                        </div>
+                        <p>Crispy rolls filled with mixed vegetables and sweet chili sauce</p>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Mild</span>
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="main">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Butter Chicken</h4>
+                            <span class="price">₹499</span>
+                        </div>
+                        <p>Tender chicken in rich tomato and butter gravy</p>
+                        <span class="badge">Popular</span>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                            <span class="non-veg-badge"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Paneer Makhani</h4>
+                            <span class="price">₹399</span>
+                        </div>
+                        <p>Cottage cheese in rich tomato and butter gravy</p>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Mild</span>
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Biryani</h4>
+                            <span class="price">₹449</span>
+                        </div>
+                        <p>Fragrant basmati rice with spices and choice of protein</p>
+                        <span class="badge">Must Try</span>
+                        <div class="item-footer">
+                            <span class="spice-level"><i class="fas fa-pepper-hot"></i> Medium</span>
+                            <span class="non-veg-badge"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Gulab Jamun</h4>
+                            <span class="price">₹199</span>
+                        </div>
+                        <p>Sweet milk solids dumplings in sugar syrup</p>
+                        <span class="badge">Best Seller</span>
+                        <div class="item-footer">
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Kheer</h4>
+                            <span class="price">₹179</span>
+                        </div>
+                        <p>Traditional rice pudding with nuts and saffron</p>
+                        <div class="item-footer">
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Ice Cream</h4>
+                            <span class="price">₹159</span>
+                        </div>
+                        <p>Homemade ice cream with choice of flavors</p>
+                        <div class="item-footer">
+                            <span class="veg-badge"><i class="fas fa-leaf"></i> Veg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <p>Founded in 2010, Spice Garden has been serving authentic Indian cuisine to our valued customers. Our passion for quality ingredients and traditional cooking techniques has made us a favorite destination for food lovers.</p>
+                    <p>Our chefs combine traditional recipes with modern culinary trends to create unforgettable dining experiences. We take pride in using the finest spices and ingredients to bring you the true taste of India.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Best Restaurant 2023</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>13 Years of Excellence</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>10,000+ Happy Customers</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="location-content">
+                <div class="address">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Spice Street, Foodie City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 11:00 AM - 11:00 PM</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564750981!5m2!1sen!2s" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Reserve a Table</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    Spice Garden
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="#location">Location</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Spice Garden. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
